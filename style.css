@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    max-height: 600px;
+    background-color: #0e0e0e;
+    margin: 0;
+}
+
+.container {
+    padding: 95px 0px 30px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.child {
+    width: 600px;
+    height: 150px;
+    background-color: #0e0e0e;
+    position: absolute;
+    top: 30%;
+    border-radius: 11px;
+    text-align: center;
+    color: #fff;
+    margin: 30px;
+    padding: 40px 0px 40px;
+}
+
+.child::before {
+    content: "";
+    position: absolute;
+    inset: -5px;
+    z-index: -1;
+    border-radius: 16px;
+    background: linear-gradient(220.94deg, #eb3850 14.43%, #ff9933 55.28%, #80216D 16.16%, #C97B4E 14.16%);
+    background-size: 400% 400%;
+    animation: colors 8s ease infinite;
+}
+
+@keyframes colors {
+    0%{
+        background-position: 0% 25%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+h1, p {
+    color: #fff;
+    
+}
+
+.page-title {
+    margin: -5px 0 6px;
+    font-size: 45px;
+}
+
+.page-subtitle {
+    margin-top: -2px;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+  
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    max-width: 200px;
+    text-align: center;
+}
+
+button {
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 18px;
+    background: linear-gradient(220.94deg, #ff9999 14.43%, #ff9933 55.28%);
+    background-size: 400% 400%;
+    animation: colors 12s ease infinite;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+a:hover {
+    color: #eeee
+}
+
+#valorConvertido {
+    color: #fff;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
