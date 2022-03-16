@@ -10,6 +10,7 @@ body {
 #btn-voltar {
     position: relative;
     margin: 12px;
+    text-decoration: none;
 }
 
 #btn-voltar:hover, button:hover {
