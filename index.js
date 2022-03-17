@@ -13,7 +13,7 @@ function converter(isDolarParaReal = false) { //// Declara a função converter 
     function realParaDolar() {
         let dolar = 5.16;
         let resultadoEmDolar = parseFloat(valorInserido * dolar); // transformando o valor em numérico, pois anteriormente estava como string
-        valorConvertido.innerHTML = `O resultado em real é R$ ${resultadoEmDolar}`; // o elemento h2 irá receber esse valor dentro do HTML, ou seja, irá imprimir todo o resultado do valorConvertido + valorEmReal;
+        valorConvertido.innerHTML = `O resultado em dólar é R$ ${resultadoEmDolar}`; // o elemento h2 irá receber esse valor dentro do HTML, ou seja, irá imprimir todo o resultado do valorConvertido + valorEmReal;
     }
 
     function dolarParaReal() {
